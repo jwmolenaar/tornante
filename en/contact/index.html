@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" data-alt-lang="nl" data-alt-url="/contact/">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tornante Technology — Let&amp;#39;s get acquainted</title>
+  <meta name="description" content="Send us a message or use our contact details below.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel="canonical" href="https://tornante.tech/en/contact/">
+  <link rel="alternate" hreflang="nl" href="https://tornante.tech/contact/">
+  <link rel="alternate" hreflang="en" href="https://tornante.tech/en/contact/">
+  <link rel="alternate" hreflang="x-default" href="https://tornante.tech/contact/">
+  <script>
+    // Returning visitors keep their chosen language (stored as tt_lang).
+    (function () {
+      try {
+        var l = localStorage.getItem("tt_lang");
+        if (l !== "nl" && l !== "en") return;
+        var d = document.documentElement;
+        if (l !== d.getAttribute("lang")) {
+          location.replace(d.getAttribute("data-alt-url"));
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-bar">
+    <a href="/en/" class="header-logo" aria-label="Tornante Technology — Home">
+      <img src="/assets/logo-white.png" alt="Tornante Technology">
+    </a>
+    <nav class="header-nav" aria-label="Main navigation">
+      <a href="/en/" class="nav-link">Home</a>
+      <a href="/en/sap/" class="nav-link">SAP Development</a>
+      <a href="/en/travel/" class="nav-link">Travel apps</a>
+      <a href="/en/contact/" class="nav-link is-active">Contact</a>
+      <span class="header-divider"></span>
+      <span class="lang-switch">
+        <a href="/contact/" data-set-lang="nl" class="" lang="nl" hreflang="nl">NL</a>
+        <span class="sep">/</span>
+        <a href="/en/contact/" data-set-lang="en" class="is-active" lang="en" hreflang="en">EN</a>
+      </span>
+    </nav>
+    <button class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile menu">
+    <a href="/en/" class="nav-link">Home</a>
+    <a href="/en/sap/" class="nav-link">SAP Development</a>
+    <a href="/en/travel/" class="nav-link">Travel apps</a>
+    <a href="/en/contact/" class="nav-link is-active">Contact</a>
+    <span class="lang-switch">
+      <a href="/contact/" data-set-lang="nl" class="" lang="nl" hreflang="nl">NL</a>
+      <span class="sep">/</span>
+      <a href="/en/contact/" data-set-lang="en" class="is-active" lang="en" hreflang="en">EN</a>
+    </span>
+  </nav>
+</header>
+
+<main>
+<section class="page-hero">
+  
+  <img src="/assets/symbol.svg" alt="" class="hero-mark-side">
+  
+  <div class="page-hero-inner">
+    <p class="kicker">Contact</p>
+    <h1>Let&#39;s get acquainted</h1>
+    <p class="intro">Send us a message or use our contact details below.</p>
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="contact-cols">
+    <div class="contact-details">
+      <div class="contact-row">
+        <span class="contact-label">Company</span>
+        <span class="contact-value">Tornante Technology</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">Address</span>
+        <span class="contact-value">Périgordlaan 35, 5627 BJ Eindhoven</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">Chamber of Commerce number</span>
+        <span class="contact-value">80070620</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">LinkedIn</span>
+        <a href="https://www.linkedin.com/company/tornante-technology" class="contact-value" rel="noopener">linkedin.com/company/tornante-technology</a>
+      </div>
+    </div>
+    <div class="contact-card">
+      <h2>Get in touch?</h2>
+      <p>Tell us about your project or ask your question.</p>
+      <div class="card-action">
+        <a href="mailto:info@tornante.tech" class="btn btn-primary">Send a message</a>
+        <p class="card-email">Or email us directly at <a href="mailto:info@tornante.tech">info@tornante.tech</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="/assets/lockup-color.png" alt="Tornante Technology">
+        <span class="footer-tagline">Software that puts the user first.</span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="/en/">Home</a>
+        <a href="/en/sap/">SAP Development</a>
+        <a href="/en/travel/">Travel apps</a>
+        <a href="/en/contact/">Contact</a>
+      </nav>
+      <span class="footer-copy">© 2026 Tornante Technology</span>
+    </div>
+  </footer>
+</main>
+
+<script>
+  (function () {
+    var btn = document.querySelector(".menu-toggle");
+    var menu = document.getElementById("mobile-menu");
+    if (btn && menu) {
+      btn.addEventListener("click", function () {
+        var open = menu.classList.toggle("is-open");
+        btn.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+    }
+    var links = document.querySelectorAll("[data-set-lang]");
+    for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener("click", function () {
+        try { localStorage.setItem("tt_lang", this.getAttribute("data-set-lang")); } catch (e) {}
+      });
+    }
+  })();
+</script>
+</body>
+</html>

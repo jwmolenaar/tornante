@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" data-alt-lang="nl" data-alt-url="/reis-apps/">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tornante Technology — Travel apps for the optimal journey</title>
+  <meta name="description" content="We build city audio guides that take you through Paris, Barcelona, Rome and more — engaging, clear and at your own pace. Made for iPhone and Android.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel="canonical" href="https://tornante.tech/en/travel/">
+  <link rel="alternate" hreflang="nl" href="https://tornante.tech/reis-apps/">
+  <link rel="alternate" hreflang="en" href="https://tornante.tech/en/travel/">
+  <link rel="alternate" hreflang="x-default" href="https://tornante.tech/reis-apps/">
+  <script>
+    // Returning visitors keep their chosen language (stored as tt_lang).
+    (function () {
+      try {
+        var l = localStorage.getItem("tt_lang");
+        if (l !== "nl" && l !== "en") return;
+        var d = document.documentElement;
+        if (l !== d.getAttribute("lang")) {
+          location.replace(d.getAttribute("data-alt-url"));
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-bar">
+    <a href="/en/" class="header-logo" aria-label="Tornante Technology — Home">
+      <img src="/assets/logo-white.png" alt="Tornante Technology">
+    </a>
+    <nav class="header-nav" aria-label="Main navigation">
+      <a href="/en/" class="nav-link">Home</a>
+      <a href="/en/sap/" class="nav-link">SAP Development</a>
+      <a href="/en/travel/" class="nav-link is-active">Travel apps</a>
+      <a href="/en/contact/" class="nav-link">Contact</a>
+      <span class="header-divider"></span>
+      <span class="lang-switch">
+        <a href="/reis-apps/" data-set-lang="nl" class="" lang="nl" hreflang="nl">NL</a>
+        <span class="sep">/</span>
+        <a href="/en/travel/" data-set-lang="en" class="is-active" lang="en" hreflang="en">EN</a>
+      </span>
+    </nav>
+    <button class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile menu">
+    <a href="/en/" class="nav-link">Home</a>
+    <a href="/en/sap/" class="nav-link">SAP Development</a>
+    <a href="/en/travel/" class="nav-link is-active">Travel apps</a>
+    <a href="/en/contact/" class="nav-link">Contact</a>
+    <span class="lang-switch">
+      <a href="/reis-apps/" data-set-lang="nl" class="" lang="nl" hreflang="nl">NL</a>
+      <span class="sep">/</span>
+      <a href="/en/travel/" data-set-lang="en" class="is-active" lang="en" hreflang="en">EN</a>
+    </span>
+  </nav>
+</header>
+
+<main>
+
+<section class="page-hero">
+  
+  <img src="/assets/symbol.svg" alt="" class="hero-mark-side">
+  
+  <div class="page-hero-inner">
+    <p class="kicker">Experience a world city in a whole new way</p>
+    <h1>Travel apps for the optimal journey</h1>
+    <p class="intro">We build city audio guides that take you through Paris, Barcelona, Rome and more — engaging, clear and at your own pace. Made for iPhone and Android.</p>
+  </div>
+</section>
+
+<section class="section">
+  <h2>For every audience</h2>
+  <div class="card-grid">
+    
+    <div class="info-card">
+      <h3>For adults</h3>
+      <p>Rich stories, history and hidden gems, told through an audio guide that follows your walk. Based on your location, the best stories play in your ear, in your own language.</p>
+    </div>
+    
+    <div class="info-card">
+      <h3>For children</h3>
+      <p>Playful, accessible guides that let children discover a city while having fun. Narrative and exciting for children aged 8 to 12.</p>
+    </div>
+    
+  </div>
+</section>
+
+<section class="chips-section">
+  <h2>Available on</h2>
+  <div class="chips">
+    
+    <span class="chip chip-strong">iPhone · iOS</span>
+    
+    <span class="chip chip-strong">Android</span>
+    
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="cta-panel">
+    <h2>Curious about the apps, or want to test one?</h2>
+    <a href="/en/contact/" class="btn btn-primary">Get in touch</a>
+  </div>
+</section>
+
+
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="/assets/lockup-color.png" alt="Tornante Technology">
+        <span class="footer-tagline">Software that puts the user first.</span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="/en/">Home</a>
+        <a href="/en/sap/">SAP Development</a>
+        <a href="/en/travel/">Travel apps</a>
+        <a href="/en/contact/">Contact</a>
+      </nav>
+      <span class="footer-copy">© 2026 Tornante Technology</span>
+    </div>
+  </footer>
+</main>
+
+<script>
+  (function () {
+    var btn = document.querySelector(".menu-toggle");
+    var menu = document.getElementById("mobile-menu");
+    if (btn && menu) {
+      btn.addEventListener("click", function () {
+        var open = menu.classList.toggle("is-open");
+        btn.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+    }
+    var links = document.querySelectorAll("[data-set-lang]");
+    for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener("click", function () {
+        try { localStorage.setItem("tt_lang", this.getAttribute("data-set-lang")); } catch (e) {}
+      });
+    }
+  })();
+</script>
+</body>
+</html>
